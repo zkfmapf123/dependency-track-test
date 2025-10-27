@@ -30,9 +30,9 @@ jobs:
       - name: Upload SBOM to DependencyTrack
         run: |
           curl -X POST \
-            -H "X-Api-Key: ${{ secrets.DT_API_KEY }}" \
+            -H "X-Api-Key: ${{ secrets.DT_SECRET_KEY }}" \
             -H "Content-Type: application/json" \
             -d @sbom.json \
-            ${{ secrets.DT_URL }}/api/v1/bom
+            ${{ secrets.DT_PUBLIC_URL }}/api/v1/bom
           echo "SBOM uploaded to DependencyTrack"
 
