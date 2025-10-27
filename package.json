@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.2",
-    "@cyclonedx/cyclonedx-npm": "^3.10.3"
+    "@cyclonedx/cyclonedx-npm": "^4.0.0"
   }
 }
 
